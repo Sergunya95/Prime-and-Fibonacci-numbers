@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		18F28C91269256FB004EEDA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F28C90269256FB004EEDA2 /* AppDelegate.swift */; };
 		18F28C93269256FB004EEDA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F28C92269256FB004EEDA2 /* SceneDelegate.swift */; };
-		18F28C95269256FB004EEDA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F28C94269256FB004EEDA2 /* ViewController.swift */; };
+		18F28C95269256FB004EEDA2 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F28C94269256FB004EEDA2 /* CollectionViewController.swift */; };
 		18F28C98269256FB004EEDA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F28C96269256FB004EEDA2 /* Main.storyboard */; };
 		18F28C9A269256FD004EEDA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F28C99269256FD004EEDA2 /* Assets.xcassets */; };
 		18F28C9D269256FD004EEDA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F28C9B269256FD004EEDA2 /* LaunchScreen.storyboard */; };
+		18F28CA626925AC8004EEDA2 /* LoadingReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F28CA426925AC8004EEDA2 /* LoadingReusableView.swift */; };
+		18F28CA726925AC8004EEDA2 /* LoadingReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F28CA526925AC8004EEDA2 /* LoadingReusableView.xib */; };
+		18F28CAA26926360004EEDA2 /* CollectionViewItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F28CA826926360004EEDA2 /* CollectionViewItemCell.swift */; };
+		18F28CAB26926360004EEDA2 /* CollectionViewItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F28CA926926360004EEDA2 /* CollectionViewItemCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18F28C8D269256FB004EEDA2 /* Prime and Fibonacci numbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prime and Fibonacci numbers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F28C90269256FB004EEDA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F28C92269256FB004EEDA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18F28C94269256FB004EEDA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18F28C94269256FB004EEDA2 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		18F28C97269256FB004EEDA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18F28C99269256FD004EEDA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18F28C9C269256FD004EEDA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18F28C9E269256FD004EEDA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F28CA426925AC8004EEDA2 /* LoadingReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingReusableView.swift; sourceTree = "<group>"; };
+		18F28CA526925AC8004EEDA2 /* LoadingReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingReusableView.xib; sourceTree = "<group>"; };
+		18F28CA826926360004EEDA2 /* CollectionViewItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewItemCell.swift; sourceTree = "<group>"; };
+		18F28CA926926360004EEDA2 /* CollectionViewItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewItemCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +65,12 @@
 			isa = PBXGroup;
 			children = (
 				18F28C90269256FB004EEDA2 /* AppDelegate.swift */,
+				18F28CA426925AC8004EEDA2 /* LoadingReusableView.swift */,
+				18F28CA526925AC8004EEDA2 /* LoadingReusableView.xib */,
 				18F28C92269256FB004EEDA2 /* SceneDelegate.swift */,
-				18F28C94269256FB004EEDA2 /* ViewController.swift */,
+				18F28CA826926360004EEDA2 /* CollectionViewItemCell.swift */,
+				18F28CA926926360004EEDA2 /* CollectionViewItemCell.xib */,
+				18F28C94269256FB004EEDA2 /* CollectionViewController.swift */,
 				18F28C96269256FB004EEDA2 /* Main.storyboard */,
 				18F28C99269256FD004EEDA2 /* Assets.xcassets */,
 				18F28C9B269256FD004EEDA2 /* LaunchScreen.storyboard */,
@@ -124,6 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F28CA726925AC8004EEDA2 /* LoadingReusableView.xib in Resources */,
+				18F28CAB26926360004EEDA2 /* CollectionViewItemCell.xib in Resources */,
 				18F28C9D269256FD004EEDA2 /* LaunchScreen.storyboard in Resources */,
 				18F28C9A269256FD004EEDA2 /* Assets.xcassets in Resources */,
 				18F28C98269256FB004EEDA2 /* Main.storyboard in Resources */,
@@ -137,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F28C95269256FB004EEDA2 /* ViewController.swift in Sources */,
+				18F28CA626925AC8004EEDA2 /* LoadingReusableView.swift in Sources */,
+				18F28C95269256FB004EEDA2 /* CollectionViewController.swift in Sources */,
 				18F28C91269256FB004EEDA2 /* AppDelegate.swift in Sources */,
+				18F28CAA26926360004EEDA2 /* CollectionViewItemCell.swift in Sources */,
 				18F28C93269256FB004EEDA2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Druzhinin.Prime-and-Fibonacci-numbers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Druzhinin.Prime-and-Fibonacci-numbers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
