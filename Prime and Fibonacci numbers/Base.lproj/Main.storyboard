@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CollectionViewController" customModule="Prime_and_Fibonacci_numbers" customModuleProvider="target" sceneMemberID="viewController">
@@ -37,23 +37,37 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gsb-Jh-BO7">
+                                <rect key="frame" x="128.5" y="44" width="157" height="32"/>
+                                <segments>
+                                    <segment title="Prime"/>
+                                    <segment title="Fibonacci"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didChangeSrgment:" destination="BYZ-38-t0r" eventType="valueChanged" id="obT-0k-Zio"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="gsb-Jh-BO7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Fr4-F2-3MY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XvF-Uc-BKk" secondAttribute="bottom" id="blC-oD-DXF"/>
                             <constraint firstItem="XvF-Uc-BKk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mHg-2x-3un"/>
+                            <constraint firstItem="gsb-Jh-BO7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r4z-zu-CXw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XvF-Uc-BKk" secondAttribute="trailing" id="rck-gH-YMM"/>
                             <constraint firstItem="XvF-Uc-BKk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yUk-A7-oLw"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="oWJ-5u-lGl"/>
                     <connections>
                         <outlet property="collectionView" destination="XvF-Uc-BKk" id="ACN-q8-P0R"/>
+                        <outlet property="control" destination="gsb-Jh-BO7" id="zg5-dH-GOD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="94"/>
+            <point key="canvasLocation" x="944.92753623188412" y="93.75"/>
         </scene>
     </scenes>
     <resources>
